@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.whatsappclone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/whatsapp1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/whatsapp1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeScreen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SignUpActivityUserInfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AfterSignUpLoadingScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatInfoScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".ChatSelectContactActivity"></activity>
+
+        <activity android:name=".Settings" />
+
+        <activity android:name=".UserProfile" />
+        <activity android:name=".UserAccount" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

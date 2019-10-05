@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="?attr/selectableItemBackgroundBorderless">
+
+    <LinearLayout
+        android:id="@+id/messageToolbarChatImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/arrow_left_white" />
+
+        <ImageView
+            android:id="@+id/messageToolbarChatImage"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_person_black_36dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/messageToolbarChatImageContainer"
+        android:orientation="vertical"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="0.0dip"
+        android:paddingRight="0.0dip"
+        android:paddingBottom="2.0dip">
+
+        <TextView
+            android:id="@+id/messageToolbarChatName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Sample Chat Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/messageToolbarChatInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="last seen 1 hour ago"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

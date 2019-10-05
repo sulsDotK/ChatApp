@@ -1,0 +1,200 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6094065736270637086",
+      "lastPropertyId": "3:7377674203649825235",
+      "name": "Chat",
+      "properties": [
+        {
+          "id": "1:7122566097094049",
+          "name": "id"
+        },
+        {
+          "id": "2:7752742049871262167",
+          "name": "withWhom"
+        },
+        {
+          "id": "3:7377674203649825235",
+          "name": "position"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:9150195559609510158",
+      "lastPropertyId": "9:7256170938088477616",
+      "name": "ChatMessage",
+      "properties": [
+        {
+          "id": "1:7923392760269422929",
+          "name": "id"
+        },
+        {
+          "id": "2:7171130168175227798",
+          "name": "content"
+        },
+        {
+          "id": "3:2247437485586511513",
+          "name": "mediaUrl"
+        },
+        {
+          "id": "4:4331640306658430189",
+          "name": "mediaPath"
+        },
+        {
+          "id": "5:7580857922191867233",
+          "name": "timeStamp"
+        },
+        {
+          "id": "6:7526744282880681805",
+          "name": "status"
+        },
+        {
+          "id": "7:2913828978801305766",
+          "name": "byMe"
+        },
+        {
+          "id": "8:5569038642675040002",
+          "name": "isSelected"
+        },
+        {
+          "id": "9:7256170938088477616",
+          "indexId": "1:7159625961960524186",
+          "name": "chatToOneId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6642813264637550302",
+      "lastPropertyId": "9:4621986357313149227",
+      "name": "DbContact",
+      "properties": [
+        {
+          "id": "1:6415789088951170044",
+          "name": "id"
+        },
+        {
+          "id": "2:1499711281688340805",
+          "name": "profilePhotoUrl"
+        },
+        {
+          "id": "3:7128002550702170088",
+          "name": "profilePhotoPath"
+        },
+        {
+          "id": "4:6896936674530238546",
+          "name": "userName"
+        },
+        {
+          "id": "5:4259217797255382773",
+          "name": "phoneNumber"
+        },
+        {
+          "id": "6:3729867320747107274",
+          "name": "status"
+        },
+        {
+          "id": "7:4032973688389786375",
+          "name": "statusDate"
+        },
+        {
+          "id": "8:3660600152225614734",
+          "name": "lastSeen"
+        },
+        {
+          "id": "9:4621986357313149227",
+          "name": "isDeleted"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:7147851315122617749",
+      "lastPropertyId": "9:3311367014025470083",
+      "name": "DbUser",
+      "properties": [
+        {
+          "id": "1:3135291694653095544",
+          "name": "id"
+        },
+        {
+          "id": "2:7384077401872593923",
+          "name": "profilePhotoUrl"
+        },
+        {
+          "id": "3:1157953384706451883",
+          "name": "profilePhotoPath"
+        },
+        {
+          "id": "4:140603966067065023",
+          "name": "userName"
+        },
+        {
+          "id": "5:157261029747627210",
+          "name": "phoneNumber"
+        },
+        {
+          "id": "6:4027496276216271393",
+          "name": "status"
+        },
+        {
+          "id": "7:5299336919247459876",
+          "name": "statusDate"
+        },
+        {
+          "id": "8:565564726748189805",
+          "name": "lastSeen"
+        },
+        {
+          "id": "9:3311367014025470083",
+          "name": "token"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:2619720397305333151",
+      "lastPropertyId": "5:6711051161750741316",
+      "name": "PushKey",
+      "properties": [
+        {
+          "id": "1:7502183973078202282",
+          "name": "id"
+        },
+        {
+          "id": "2:2463900343927918435",
+          "name": "key"
+        },
+        {
+          "id": "3:221915444336344596",
+          "name": "byMe"
+        },
+        {
+          "id": "4:8679760106267235842",
+          "indexId": "2:1766507902586278566",
+          "name": "chatToOneId"
+        },
+        {
+          "id": "5:6711051161750741316",
+          "name": "msgID"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:2619720397305333151",
+  "lastIndexId": "2:1766507902586278566",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
